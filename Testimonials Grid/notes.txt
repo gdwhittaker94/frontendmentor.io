@@ -1,0 +1,51 @@
+**THINGS LEARNED**
+
+- Have to set 'position: relative' so that z-index applies
+
+- Percentage with border-radius for perfect circle
+
+- Mobile first
+
+- Building a webpage is like a Bob Ross painting: start off with the rough base layer(s),for 70% of the time it doesn't look anything like the finished product, then you polish it all off, add some nice tidbits and voila! You've got your final amazing looking thing! */
+
+- Flex-basis with flexbox version in order to control size and distribution of the testimonial boxes
+
+- 100% = 100% -> if we set testimonial box sizes which add up to more than 100%, elements will overflow or gaps don't appear. We have to play around within the space available.
+
+
+**GRID**
+
+
+Mobile Version:
+
+.testimonialContainer
+display: grid
+gtc: repeat(4, 1fr)
+gap: 1.5rem
+
+
+Tablet/Desktop Version:
+
+--METHOD 1--
+
+.testimonialContainer
+gtc: repeat(4, 1fr)
+
+.grid-col-span-2:
+span 2             --> apply this class to specific boxes
+
+.testimonial-5:
+grid-column-start: 4;
+grid-row: 1 / -1
+
+--METHOD 2--
+
+gta:
+1 1 2 5
+3 4 4 5
+
+gta (smaller):
+1 1
+2 5
+3 5
+4 4
