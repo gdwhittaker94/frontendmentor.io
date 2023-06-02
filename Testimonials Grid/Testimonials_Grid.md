@@ -1,5 +1,3 @@
-#Testimonials Grid
-
 This is a project which comes from [frontendmentor.io](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7) (preview below). 
 The main focus of this project was to practice and test my CSS Flexbox and CSS Grid skills. 
 
